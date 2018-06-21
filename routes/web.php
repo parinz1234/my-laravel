@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/mathjax', [
+    'as' => 'get_mathjax',
+    'uses' => 'MathJax\TestMathJaxController@get_mathjax'
+]);
